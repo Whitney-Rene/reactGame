@@ -7,8 +7,10 @@ const user = {name: "Whitney-Rene", url: "https://media.licdn.com/dms/image/C4E0
 
   return (
     <>
-  <h1>reactGame</h1>
   <Message name={user.name} url={user.url} />
+  <h1>Guess a Number Game</h1>
+  <img src="https://i.pinimg.com/1200x/99/d9/23/99d9239aafdc5dd180eeae9bc30dcc6a.jpg" alt="the word guess surrounded by questions marks" />
+  
     </>
   )
 }
