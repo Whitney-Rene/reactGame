@@ -10,12 +10,18 @@ function App() {
   const [guess, setGuess] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  
+
   return (
     <>
-  <Message />
-  <h1>Guess a Number Game</h1>
   <img src="https://i.pinimg.com/1200x/99/d9/23/99d9239aafdc5dd180eeae9bc30dcc6a.jpg" alt="the word guess surrounded by questions marks" />
+  <h1>Guess a Number between 1-10</h1>
+  <p>Enter your GUESS in the box below:</p>
+  <Message />
+  <input/>
+  <button>Submit your GUESS</button>
+  <p>You won 0 times!</p>
+  <button>Play Again?</button>
+  
   
     </>
   )
