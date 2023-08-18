@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Message from './Message';
 
 function GuessGame () {
     //create states for random#, counter for wins, user's guess and loading
@@ -39,14 +40,31 @@ function GuessGame () {
 
   return (
     <>
-  <img src="https://i.pinimg.com/1200x/99/d9/23/99d9239aafdc5dd180eeae9bc30dcc6a.jpg" alt="the word guess surrounded by questions marks" />
   <h1>Guess a Number between 1-10</h1>
   <p>Enter your GUESS in the box below:</p>
-  <Message />
-  <input/>
-  <button>Submit your GUESS</button>
-  <p>You won 0 times!</p>
-  <button>Play Again?</button>
+  <Message message={message}/>
+  {loading && <div>loading...</div>}
+  <input
+        type="number"
+        value={guess}
+        onChange={(event) => {
+          console.log(event);
+          setGuess(event.target.value);
+        }}
+      />
+  <button onClick={evaluateGuess} className="subbtn">
+        Submit your GUESS
+      </button>
+      <p>You won {wins} times!</p>
+      <button
+        onClick={(event) => {
+          console.log(event);
+          resetGame();
+        }}
+        className="playAgBtn"
+      >
+        Play Again?
+      </button>
   
   
     </>
@@ -55,3 +73,5 @@ function GuessGame () {
 }
 
 export default GuessGame;
+
+{/* <img src="https://i.pinimg.com/1200x/99/d9/23/99d9239aafdc5dd180eeae9bc30dcc6a.jpg" alt="the word guess surrounded by questions marks" /> */}

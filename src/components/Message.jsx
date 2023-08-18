@@ -1,6 +1,5 @@
-import GuessGame from "./GuessGame";
 
-function Message (props) {
+function Message () {
     return (
         <>
         <p>Hello, Whitney-Rene.</p>
