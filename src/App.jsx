@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import './App.css'
 import Message from "./components/Message.jsx"
+import GuessGame from "./components/GuessGame"
 
 function App() {
 //create states for random#, counter for wins, user's guess and loading
