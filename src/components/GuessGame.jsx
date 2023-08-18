@@ -18,7 +18,11 @@ function GuessGame () {
         setLoading(true);
         //setTimeout delays result of user input for 1000 ms
         setTimeout(function () {
-        if (guess == secretNumber) {
+        if (guess === "") {
+            setMessage("Please enter a GUESS");
+            setLoading(false);
+        }
+        else if (guess == secretNumber) {
             setMessage("You got it right!");
             setLoading(false);
             setWins(wins + 1);
@@ -31,7 +35,7 @@ function GuessGame () {
         } else {
             console.log("proud of you Whitney-Rene");
         }
-        }, 1000);
+        }, 1500);
     }
 
     //reset function
@@ -51,7 +55,7 @@ function GuessGame () {
             {
                 loading && (
                     <div>
-                       LOADING...
+                       <img className="image" src="https://miro.medium.com/v2/resize:fit:1000/1*DXvI3dy2rKOMzV8S3fKFMQ.gif" alt="bouncing shapes" />
                     </div>
                 )
             }
@@ -67,6 +71,7 @@ function GuessGame () {
             Submit your GUESS
             </button>
             <p>You won {wins} times!</p>
+            
             <button
                 onClick={(event) => {
                     console.log(event);
@@ -82,4 +87,5 @@ function GuessGame () {
   );
 }
 
+//export file
 export default GuessGame;
