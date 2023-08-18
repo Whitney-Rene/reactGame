@@ -10,4 +10,5 @@ function Message (props) {
 
 }
 
+//export the file
 export default Message;
