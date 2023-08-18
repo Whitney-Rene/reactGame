@@ -1,4 +1,4 @@
-
+import GuessGame from "./GuessGame";
 
 function Message (props) {
     return (
