@@ -1,6 +1,6 @@
 //import GuessGame component
 import './App.css'
-import './style.css'
+
 import GuessGame from "./components/GuessGame"
 
 function App() {
