@@ -1,8 +1,8 @@
 
-function Message () {
+function Message (props) {
     return (
         <>
-        <p>Hello, Whitney-Rene.</p>
+        <p className="messToUser">{props.message}</p>
         </>
     )
 

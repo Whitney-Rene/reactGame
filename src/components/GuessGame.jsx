@@ -28,7 +28,7 @@ function GuessGame () {
       } else {
         console.log("proud of you Whitney-Rene");
       }
-    }, 1500);
+    }, 1000);
   }
   
   function resetGame() {
