@@ -1,0 +1,19 @@
+.subbtn {
+    background-color: lightsalmon;
+    font-weight: bold;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .playAgBtn {
+    background-color: lightblue;
+    font-weight: bold;
+  }
+  
+  p {
+    font-weight: bold;
+  }
+  
+  .para {
+    color: white;
+  }

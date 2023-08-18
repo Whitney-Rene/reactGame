@@ -40,3 +40,28 @@
 .read-the-docs {
   color: #888;
 }
+
+.subbtn {
+  background-color: lightsalmon;
+  font-weight: bold;
+  display: block;
+  margin: 10px auto;
+}
+
+.playAgBtn {
+  background-color: lightblue;
+  font-weight: bold;
+}
+
+p {
+  font-weight: bold;
+}
+
+.messToUser {
+ color: gray;
+}
+
+body {
+  background-color: wheat;
+}
+
