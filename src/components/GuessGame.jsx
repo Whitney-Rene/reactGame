@@ -41,14 +41,19 @@ function GuessGame () {
         setMessage("");
         console.log("i'm that girl");
     }
-  //return of instances and JSX
+    
+    //return of instances and JSX
     return (
         <>
             <h1>Guess a Number between 1-10</h1>
             <p>Enter your GUESS in the box below:</p>
             <Message message={message}/>
             {
-                loading && <div>loading...</div>
+                loading && (
+                    <div>
+                       LOADING...
+                    </div>
+                )
             }
             <input
                 type="number"
